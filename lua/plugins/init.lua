@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
       end
   }
 
+  use 'averms/black-nvim'
   -- иконки в выпадающем списке автодополнений (прямо как в vscode)
   use('onsails/lspkind-nvim')
   use {
