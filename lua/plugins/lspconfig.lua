@@ -11,7 +11,7 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-local on_attach = require('plugins.lsp') 
+local on_attach = require('plugins.lsp')
 
 lspconfig['pylsp'].setup{
     on_attach = on_attach,
@@ -22,4 +22,8 @@ lspconfig['sumneko_lua'].setup {
     on_attach = on_attach,
     flags = lsp_flags,
     require('plugins.sumneko_lua'),
+}
+lspconfig['lemminx'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags
 }
