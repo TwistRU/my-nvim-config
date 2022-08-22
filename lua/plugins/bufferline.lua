@@ -20,3 +20,4 @@ local opts = {noremap = true, silent = true}
 
 map('n', ']b', '<cmd>BufferLineCycleNext<CR>', opts)
 map('n', '[b', '<cmd>BufferLineCyclePrev<CR>', opts)
+map('n', '[]', '<cmd>BufferLinePickClose<CR>', opts)
