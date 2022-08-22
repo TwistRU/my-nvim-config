@@ -27,3 +27,7 @@ lspconfig['lemminx'].setup{
     on_attach = on_attach,
     flags = lsp_flags
 }
+lspconfig['kotlin_language_server'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags
+}
